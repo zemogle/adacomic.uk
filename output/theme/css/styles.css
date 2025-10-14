@@ -1,14 +1,41 @@
 
 html {
   background-color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.quattrocento-sans-bold {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quattrocento-sans-regular-italic {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quattrocento-sans-bold-italic {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 body, p, li {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Quattrocento Sans', sans-serif !important;
+  color: rgb(27,25,26)
   }
   
-  .navbar-item a {
-    font-family: 'Patrick Hand', cursive;
+  .ada-navbar {
+    margin: 0 !important;
+  }
+
+  .ada-navbar  a.navbar-item {
+    text-transform: uppercase;
   }
   
   .article {
@@ -19,11 +46,30 @@ body, p, li {
     background-color: rgb(36, 33, 34);
   }
   
-  h1, h2, h3, h4, h5 {
+  .section.banner {
+    background-color: rgb(36, 33, 34);
+    background-image: url(../images/ada_banner_bg.jpg);
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    color: #000;
   }
+  .section.banner h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+ h1, h2, h3, h4, h5 {
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.shadow {
+  line-height: 1.1em;
+}
 
   h1 {
     font-size:3.5em;
@@ -58,19 +104,26 @@ body, p, li {
   }
   
   a {
-    color:coral;
+    color:#ffca33;
+    font-weight: bold;
     text-decoration: none;
   }
   
   a:hover {
-    color: #f26d21;
+    color: #555;
+    background-color: #ffca33;
   }
   
   .content, .content p, .content h1, .content h2, .content h3, .content h4, .content h5 {
     color: #555;
   }
   
-  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
   
   .icon-level img {
     display:block;
@@ -80,12 +133,9 @@ body, p, li {
   
   a.text-link {
     text-decoration: none;
-    color:#f26d21;
+    background-color: #555;
+    color: #fff;
     box-shadow: inset 0 -7px 0 0 rgba(19,149,186,.15);
-  }
-  
-  a:hover {
-    color:rgb(19,149,186);
   }
   
   a.button-secondary:hover {
@@ -96,6 +146,23 @@ body, p, li {
   .footer{
     margin-top:20px;
     background-color: #fff;
+  }
+
+  .footer a {
+    color: #000;
+    font-size: 12px;
+  }
+
+  ul.footer-menu {
+    list-style: none;
+    vertical-align: middle;
+  }
+
+  ul.footer-menu li {
+    display: inline-block;
+    padding: 0 0.5rem;
+    min-width: 12rem;
+    text-align: center;
   }
   
   .paper {
