@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Latest News</h1>
+
+<div class="news-listing">
+  {% set news_items = articles|selectattr('category', 'equalto', 'news')|sort(attribute='date', reverse=True)|list %}
+  
+  {% for article in news_items %}
+  <article class="news-item">
+    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+    {% if article.summary %}
+      <p class="summary">{{ article.summary }}</p>
+    {% endif %}
+    <a href="{{ SITEURL }}/{{ article.url }}" class="read-more">Read more →</a>
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}

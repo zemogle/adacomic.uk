@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ article.title }}{% if article.name %} / {{ article.name }}{% endif %}</h1>
+    <div class="columns">
+        <div class="column is-one-third">
+            <figure class="image">
+            <img src="{{ SITEURL }}/{{ article.thumbnail }}" alt="Ada's Adventures in Science in {{ article.title }}">
+            </figure>
+        </div>
+        <div class="column is-half">
+            <ul>
+                {% if article.translator %}<li>Translator: <strong>{{ article.translator }}</strong></li>{% endif %}
+                <li><a href="{{ article.fullpage }}">Fullpage PDF</a></li>
+                <li><a href="{{ article.booklet }}">Booklet PDF</a></li>
+            </ul>
+        </div>
+
+
+{% endblock %}

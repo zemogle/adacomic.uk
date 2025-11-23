@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+Comic Books - {{ super() }}
+{% endblock %}
+
+{% block content %}
+<h1>Comic Books</h1>
+
+<div class="columns  is-multiline">
+{% set gallery_items = articles|selectattr('category', 'eq', 'comics')|sort(attribute='date', reverse=True)|list %}
+{% for item in gallery_items %}
+  <div class="column is-one-fifth">
+   <div class="card">
+      <figure>
+        <img src="{{ SITEURL }}/{{ item.thumbnail }}" alt="Ada's Adventures in Science in {{ item.title }}">
+        <figcaption class="has-text-centered corner-text">
+          <a href="{{ SITEURL }}/{{ item.url }}">{{ item.title }}</a>
+        </figcaption>
+      </figure>
+
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        <a href="https://static.darkmattersheep.net/adacomics/ada_full_EN.pdf">Fullpage</a
+          >
+      </p>
+      <p class="card-footer-item">
+        <a href="https://static.darkmattersheep.net/adacomics/ada_full_EN.pdf">Booklet</a>
+      </p>
+    </footer>
+  </div>
+  </div>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}
