@@ -23,10 +23,14 @@ AUTHOR_FEED_RSS = None
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
-ARTICLE_URL = 'news/'
-ARTICLE_SAVE_AS = 'news/{slug}/index.html'
 
-ARCHIVES_SAVE_AS = 'news/index.html'
+# Article/Page paths
+ARTICLE_PATHS = ['news', 'comicbooks']
+PAGE_PATHS = ['pages']
+
+# URL settings
+ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
 
 LANDING_PAGE_TITLE = "Ada's Adventures in Science"
 
