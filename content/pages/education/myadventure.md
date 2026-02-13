@@ -14,9 +14,9 @@ This activity blends scientific vocabulary, collaboration, creativity and artist
 
 - Introducing My Adventure in Science Presentation
 - A digital projector *or* you can use the copies of the comic book with all the students
-- [Science vocabulary list](/activity/science_word_list.pdf)
-- [Scenario list](/activity/scenario_list.pdf)
-- [Comic strip template](/activity/Ada_My_Adventure_in_Science.pdf)
+- [Science vocabulary list](https://static.darkmattersheep.net/activity/science_word_list.pdf)
+- [Scenario list](https://static.darkmattersheep.net/activity/scenario_list.pdf)
+- [Comic strip template](https://static.darkmattersheep.net/activity/Ada_My_Adventure_in_Science.pdf)
 - [Copies of Ada’s Adventures in Science](/comics/)
 
 ## Evaluation

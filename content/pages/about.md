@@ -42,7 +42,7 @@ Although the initial translations of Ada were performed by translation companies
 - සිංහල (Sinhala) - Bhathiya Senavirathna &amp; Subath Amaradasa
 - 简体中文 (Simplified Chinese) - 叶昊扬 (Ye Haoyang) &amp; 王書瑋 (Shu-Wei Wang)
 - 繁體中文 (Tradiational Chinese) -  叶昊扬 (Ye Haoyang) &amp; 王書瑋 (Shu-Wei Wang)
-- اَلْعَرَبِيَّةُ (Arabic) - Alaa Ibrahim, Fatema al-Awaid &ampl Ghaydah al-Jabri
+- اَلْعَرَبِيَّةُ (Arabic) - Alaa Ibrahim, Fatema al-Awaid &amp; Ghaydah al-Jabri
 - 日本語 (Japanese) - 富田 晃彦 (Akihiko Tomita)
 - Украї́нська мо́ва (Ukrainian) - Маша Літох (Masza Litokh)
 - فارسی (Farsi) - حمید رضا صفری (Hamid Reza Safari)

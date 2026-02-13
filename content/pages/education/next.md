@@ -12,8 +12,8 @@ This activity blends scientific vocabulary, collaboration, creativity and artist
 
 ## Resources
 
-- Introduction to Ada presentation - [PDF](/activity/introducing_ada.pdf) or [Powerpoint](/activity/introducing_ada.pptx)
-- [What Happened Next comic template](/activity/Ada_what_happened_next.pdf) (enough for 1 between 2-3)
+- Introduction to Ada presentation - [PDF](https://static.darkmattersheep.net/activity/introducing_ada.pdf) or [Powerpoint](https://static.darkmattersheep.net/activity/introducing_ada.pptx)
+- [What Happened Next comic template](https://static.darkmattersheep.net/activity/Ada_what_happened_next.pdf) (enough for 1 between 2-3)
 - A digital projector *or* you can use the copies of the comic book with all the students
 - [Copies of Ada’s Adventures in Science](/comics/)
 
