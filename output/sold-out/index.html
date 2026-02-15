@@ -25,33 +25,32 @@
 
   <body class="is-fullheight">
     
-    <nav class="level ada-navbar is-mobile" role="navigation" aria-label="main navigation">
-         <p class="level-item has-text-centered">
+    <nav class="ada-navbar" role="navigation" aria-label="main navigation">
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div id="navMenu" class="navbar-menu">
           <a href="/comics/" class="navbar-item" >
             Comics
           </a>
-          </p>
-
-          <p class="level-item has-text-centered">
             <a href="/education/" class="navbar-item">
               Education
             </a>
-          </p>
-      <p class="level-item has-text-centered">
+      <div class="has-text-centered  ada-navbar-logo">
         <a href="/" class="navbar-item"><img
           src="/images/ada_head_icon.jpg"
           alt="Ada's Adventures"
           style="height: 50px"
         /></a>
-      </p>
-      <p class="level-item has-text-centered">
+      </div>
         <a class="navbar-item"href="/about/">
             About</a>
-      </p>
-      <p class="level-item has-text-centered">
         <a class="link navbar-item" href="/contact/">
             Contact Us</a>
-      </p>
+      </div>
     </nav>
 
        <section class="header">
@@ -122,6 +121,29 @@
 </footer>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+
+});
+</script>
   </body>
 
 </html>
