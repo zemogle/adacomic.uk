@@ -6,3 +6,4 @@ Booklet: https://static.darkmattersheep.net/adacomics/ada_booklet_MN.pdf
 Fullpage: https://static.darkmattersheep.net/adacomics/ada_full_MN.pdf
 Status: published
 Draft: false
+Template: comic_page
