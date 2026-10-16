@@ -10,11 +10,32 @@
             </figure>
         </div>
         <div class="column is-half">
-            <ul>
-                {% if article.translator %}<li>Translator: <strong>{{ article.translator }}</strong></li>{% endif %}
-                <li><a href="{{ article.fullpage }}">Fullpage PDF</a></li>
-                <li><a href="{{ article.booklet }}">Booklet PDF</a></li>
-            </ul>
+            {% if article.translator %}
+            <h4>Translation</h4>
+             <p>{{ article.translator }}</p>
+            {% endif %}
+            <p>
+                <ul>
+                    <li><a href="{{ article.fullpage }}">Fullpage PDF</a></li>
+                    <li><a href="{{ article.booklet }}">Booklet PDF</a></li>
+                </ul>
+            </p>
+            <h4>Open Source</h4>
+            <p>This comic book is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+            <span class="icon-text">
+                <span class="icon">
+                    <img src="{{ SITEURL }}/images/cc.svg" alt="Creative Commons logo" />
+                </span>
+                <span class="icon">
+                    <img src="{{ SITEURL }}/images/by.svg" alt="Creative Commons logo" />
+                </span>
+                <span class="icon">
+                    <img src="{{ SITEURL }}/images/nc.svg" alt="Creative Commons logo" />
+                </span>
+                <span class="icon">
+                    <img src="{{ SITEURL }}/images/sa.svg" alt="Creative Commons logo" />
+                </span>
+            </span>
         </div>
 
 
